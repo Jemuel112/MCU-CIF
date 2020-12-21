@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CIF Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 10px;
+            width: 816px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 816px;
+        }
+
+        td, th {
+            border: 1px solid #000000;
+            /*border-bottom: 1px solid #FFF;*/
+
+        }
+
+        td {
+            /*padding: 0;*/
+            /*margin: 1px 1px 1px 1px;*/
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .content {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .selection {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #d9d9d9;
+            font-size: 12px;
+            padding: 0px;
+            font-weight: bold;
+        }
+
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact; /*chrome & webkit browsers*/
+                color-adjust: exact; /*firefox & IE */
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div style="display: flex; align-items: center; justify-content: space-between">
+    <div style="display: flex;">
+        <img src="PIDSR.jpg" alt="PIDSR Logo" style="width: 72px; height: 80.64px;">
+        <b style="margin-left: 10px; margin-top: 10px">Philippine Integrated Disease<br>Surveillance and Response</b>
+    </div>
+    <img src="DOH.png" alt="DOH Logo" style="width: 135.36px; height: 90.24px; margin-right: -25px">
+</div>
+<div style="text-align: center; margin-top: -50px">
+    <h3 style="padding-bottom: 0px; margin-bottom: 0px">Case Investigation Form</h3>
+    <h2 style="padding: 0px; margin: 0px">Coronavirus Disease (COVID-19)</h2>
+    <br>
+</div>
+<p>samopo</p>
+<img src="https://drive.google.com/file/d/1L7pvbGducfxs-PDKFHcngAn3r86H5aM5/view?usp=sharing" alt="">
+<p>sam</p>
+<table>
+    <tr style="font-size: 12px; white-space: nowrap ">
+        <td style="width: 40%; border-bottom: 1px solid #ffffff;">Disease Reporting Unit / Hospital: <i>MCU-FDTMF
+            HOSPITAL</i></td>
+        <td style="width: 40%; border-bottom: 1px solid #ffffff;">Name of Investigator:</td>
+        <td style="text-align: center; width: 20%; border-bottom: 1px solid #ffffff;">Date of Interview (mm/dd/yyyy):
+            <br>11/04/2020
+        </td>
+    </tr>
+</table>
+
+<table style="table-layout: fixed">
+    <tr>
+        <td colspan="12" class="header">1. Patient Profile</td>
+    </tr>
+    <tr>
+        <td colspan="2">Last Name<br><span class="content" id="lastName"></span></td>
+        <td colspan="2">First Name<br><span class="content" id="firstName"></span></td>
+        <td colspan="2">Middle Name<br><span class="content" id="middleName"></span></td>
+        <td colspan="3" style="text-align: center; padding: 0px;">Birthday(mm/dd/yyyy):<br><span class="content" id="birthDay"></span>
+        </td>
+        <td colspan="1">Age<br><span class="content" id="age"></span></td>
+        <td colspan="2">Sex: (&nbsp;<span class="content" id="male"></span>&nbsp;)Male <br> (&nbsp;<span class="content" id="female"></span>&nbsp;)Female</td>
+    </tr>
+    <tr>
+        <td colspan="2">Occupation <br><span class="content" id="occupation"></span></td>
+        <td colspan="2">Civil Status <br><span class="content" id="civilStatus"></span></td>
+        <td colspan="5">NATIONALITY <br><span class="content" id="nationality"></span></td>
+        <td colspan="3">Passport No. <br><span class="content" id="passportNumber"></span></td>
+    </tr>
+    <tr>
+        <td colspan="12" class="header">2.
+            Philippines Residence
+        </td>
+    </tr>
+    <tr>
+        <td colspan="12" class="header" style="text-align: left; padding-left: 10px"><strong>2.1 Permanent
+            Address</strong></td>
+    </tr>
+    <tr>
+        <td colspan="3">House No./Lot/Bldg<br><span class="content" id="houseNumber"></span></td>
+        <td colspan="3">Street/Barangay<br><span class="content" id="street"></span></td>
+        <td colspan="3">MUNICIPALITY/CITY<br><span class="content" id="municipality"></span></td>
+        <td colspan="3">Province<br><span class="content" id="province"></span></td>
+    </tr>
+    <tr>
+        <td colspan="3">Region<br><span class="content" id="region"></span></td>
+        <td colspan="3">Home Phone No.<br><span class="content" id="homePhoneNumber"></span></td>
+        <td colspan="3">Cellphone No.<br><span class="content" id="cellPhoneNumber"></span></td>
+        <td colspan="3" style="word-break: break-all;">Email Address<br><span class="content" id="emailAddress" style="font-size: 9px "></span></td>
+    </tr>
+    <tr>
+        <td colspan="12" class="header" style="text-align: left; padding-left: 10px">2.2 Current Address</td>
+    </tr>
+    <tr>
+        <td colspan="3">House No./Lot/Bldg<br><span class="content" id="_houseNumber"></span></td>
+        <td colspan="3">Street/Barangay<br><span class="content" id="_street"></span></td>
+        <td colspan="3">MUNICIPALITY/CITY<br><span class="content" id="_municipality"></span></td>
+        <td colspan="3">Province<br><span class="content" id="_province"></span></td>
+    </tr>
+    <tr>
+        <td colspan="3">Region<br><span class="content" id="_region"></span></td>
+        <td colspan="3">Home Phone No.<br><span class="content" id="_homePhoneNumber"></span></td>
+        <td colspan="3">Work Phone No.<br><span class="content" id="_cellPhoneNumber"></span>
+        </td>
+        <td colspan="3" style="word-break: break-all">Other Email Address<br><span class="content" id="_emailAddress" style="font-size: 9px"></span></td>
+    </tr>
+    <tr>
+        <td colspan="12" class="header">3. Address
+            Outside the Philippines ( for Overseas Filipino Workers and Individuals with Residence Outside the
+            Philippines)
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">Employer's Name:<br><span class="content" id="__employer"></span></td>
+        <td colspan="4">Occupation:<br><span class="content" id="__occupation"></span></td>
+        <td colspan="4">Place of Work:<br><span class="content" id="__placeWork"></span></td>
+    </tr>
+    <tr>
+        <td colspan="3">House No./Bldg Name<br><span class="content" id="__houseNumber"></span></td>
+        <td colspan="3">Street<br><span class="content" id="__street"></span></td>
+        <td colspan="3">City/Municipality<br><span class="content" id="__city"></span></td>
+        <td colspan="3">Province<br><span class="content" id="__province"></span></td>
+    </tr>
+    <tr>
+        <td colspan="4">Country: <span class="content" id="__country"></span></td>
+        <td colspan="4">Office Phone No.: <span class="content" id="__officePhoneNumber"></span></td>
+        <td colspan="4">Cellphone No.: <span class="content" id="__cellPhonenumber"></span></td>
+    </tr>
+    <tr>
+        <td colspan="12" class="header">4. Travel
+            History
+        </td>
+    </tr>
+    <tr>
+        <td colspan="8">History of travel/visit/work in other countries with a known COVID-19<br>transmission 14 days
+            before the onset
+            of your signs and symptoms : (&nbsp;<span class="content" id="yes"></span>&nbsp;) Yes (&nbsp;<span class="content" id="no"></span>&nbsp;) No
+        </td>
+        <td colspan="4">Port (Country) of Exti: <br><span class="content" id="port"></span></td>
+    </tr>
+    <tr>
+        <td colspan="3">Airline / Sea Vessel: <br><span class="content" id="vessel"></span></td>
+        <td colspan="3">Flight / Vessel Number:<br><span class="content" id="number"></span></td>
+        <td colspan="3">Date of Departure: (mm/dd/yyyy)<br><span class="content" id="departure"></span></td>
+        <td colspan="3">Date of Arrival in Philippines: (mm/dd/yyyy)<br><span class="content" id="arrival"></span></td>
+    </tr>
+    <tr>
+        <td colspan="12" class="header">5. Exposure
+            History
+        </td>
+    </tr>
+    <tr>
+        <td colspan="7">History of EXPOSURE to a known COVID-19 case<br>14 days before the onset of your signs and
+            symptoms: (X) Yes (X) No (X) Unknown
+        </td>
+        <td colspan="5">If YES; Date of Contact with known COVID-19 Case (mm/dd/yyyy): <span class="content">N/A</span>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" rowspan="2" style="border-right: 1px solid #ffffff;">Have you been in a place with known <br>
+            COVID-19 transmission 14 days before the onset
+            of signs and symptoms:
+        </td>
+        <td colspan="2" rowspan="2" style="border-left: 1px solid #ffffff;">(X) Yes <br> (X) No <br> (X) Unknown</td>
+    </tr>
+    <tr>
+        <td colspan="6">If yes; Place <span class="selection">(X) Work place</span> <span style="padding-left: 29px"
+                                                                                          class="selection">(X)Health Facility</span>
+            <br>
+            <span style="padding-left: 69px" class="selection">(X) Social Gathering</span> <span class="selection">(X) Religious Gathering</span>
+            <br> <span style="padding-left: 69px;" class="selection">(X)Others: specify type:</span>
+            <br> DATE when you have been in that place: <br> Name of the place:
+        </td>
+    </tr>
+    <tr>
+        <td colspan="6" rowspan="5" style="text-align: center">List the NAMES of persons who were with you during this
+            (these) <br> occasion(s) and their contact numbers
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" style="text-align: center">Name</td>
+        <td colspan="3" style="text-align: center">Contact Number</td>
+    </tr>
+    <tr>
+        <td colspan="3" style="text-align: center">&nbsp;</td>
+        <td colspan="3" style="text-align: center"></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="text-align: center">&nbsp;</td>
+        <td colspan="3" style="text-align: center"></td>
+    </tr>
+    <tr>
+        <td colspan="3" style="text-align: center">&nbsp;</td>
+        <td colspan="3" style="text-align: center"></td>
+    </tr>
+    <tr>
+        <td colspan="12" class="header">6. Clinical
+            Information</td>
+    </tr>
+    <tr>
+        <td colspan="12">
+            <div style="text-align: center">Disposition at the time of report: (<span class="content">x</span>)Inpatient
+                (<span class="content">x</span>)Outpatient (<span class="content">x</span>)Discharge (<span
+                        class="content">x</span>)Died
+                (<span class="content">x</span>)Unknown
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="6">Date of Onset of Illness (mm/dd/yyyy) <span class="content">11/11/1111</span></td>
+        <td colspan="6">Date of Admission (mm/dd/yyyy) <span class="content">11/11/1111</span></td>
+    </tr>
+    <tr>
+        <td colspan="12">
+            <div style="text-align: center">(<span class="content">x</span>)Fever _____ deg Celsius
+                (<span class="content">x</span>)Cougn (<span class="content">x</span>)Sore throat (<span
+                        class="content">x</span>)Colds
+                (<span class="content">x</span>)Shortness/difficulty of breathing
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="6">Other signs/symptoms, specify: <br><span class="content">NONE</span></td>
+        <td colspan="6">Is there any history of other illness? (<span class="content">x</span>)Yes (<span
+                class="content">x</span>)No
+            <br>If Yes, specify: <span class="content">HYPERTENSION</span></td>
+    </tr>
+    <tr>
+        <td colspan="6">Chest X-ray done? (<span class="content">x</span>)Yes (<span
+                class="content">x</span>)No
+            <br>If Yes, when?<span class="content">N/A</span></td>
+        <td colspan="6">Are you pregnant? (<span class="content">x</span>)Yes (<span
+                class="content">x</span>)No
+            <br>LMP: <span class="content">N/A</span> Assessed as HIGH RISK(<span class="content">x</span>)Yes (<span
+                    class="content">x</span>)No
+        </td>
+    </tr>
+    <tr>
+        <td colspan="12">CXR ResultsL Pneumonia (<span class="content">x</span>)Yes (<span class="content">x</span>)No (<span
+                class="content">x</span>)Pending (<span class="content">x</span>)Other radiologic findings: <span
+                class="content">N/A</span>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="12" class="header">7. Specimen
+            Information</td>
+    </tr>
+    <tr style="font-size: 10px; text-align: center">
+        <td colspan="2">Specimen Collected</td>
+        <td colspan="2">If YES, Date Collected (mm/dd/yyyy):</td>
+        <td colspan="2">Date sent to RITM (mm/dd/yyyy)</td>
+        <td colspan="2">Date Received by RITM <br> (to be filled up by RITM)</td>
+        <td colspan="2">Virus Isolation Result</td>
+        <td colspan="2">PCR Result</td>
+    </tr>
+    <tr style="text-align: center">
+        <td colspan="2">( )Serum</td>
+        <td colspan="2">_ _/ _ _ / _ _</td>
+        <td colspan="2">_ _/ _ _ / _ _</td>
+        <td colspan="2">_ _/ _ _ / _ _</td>
+        <td colspan="2"></td>
+        <td colspan="2"></td>
+    </tr>
+    <tr style="text-align: center">
+        <td colspan="2">(<span class="content">x</span>)Orophartngeal / Nasopharyngeal Swab</td>
+        <td colspan="2">_ _/ _ _ / _ _</td>
+        <td colspan="2">_ _/ _ _ / _ _</td>
+        <td colspan="2">_ _/ _ _ / _ _</td>
+        <td colspan="2"></td>
+        <td colspan="2"></td>
+    </tr>
+    <tr style="text-align: center">
+        <td colspan="2">( )Serum</td>
+        <td colspan="2">_ _/ _ _ / _ _</td>
+        <td colspan="2">_ _/ _ _ / _ _</td>
+        <td colspan="2">_ _/ _ _ / _ _</td>
+        <td colspan="2"></td>
+        <td colspan="2"></td>
+    </tr>
+    <tr>
+        <td colspan="12" class="header">8.
+            Classification</td>
+    </tr>
+    <tr style="text-align: center">
+        <td colspan="4">(<span class="content">x</span>)Suspect Case</td>
+        <td colspan="4">(<span class="content">x</span>)Probable Case</td>
+        <td colspan="4">(<span class="content">x</span>)Confirmed</td>
+    </tr>
+    <tr>
+        <td colspan="12" class="header">9.
+            Outcome</td>
+    </tr>
+    <tr style="text-align: center">
+        <td colspan="3">Date of Discharge (mm/dd/yyyy): <br> <span class="content">N/A</span></td>
+        <td colspan="9"> Condition on Discharge: (<span class="content">x</span>)Improved (<span
+                class="content">x</span>)Recovered (<span class="content">x</span>)Transferred (<span
+                class="content">x</span>)Absconded (<span class="content">x</span>)Died
+        </td>
+    </tr>
+    <tr>
+        <td colspan="8">Name of Informatant (if patient not available): AREA: OPD <br><br> <span class="content">RAMON PUNZALAN <span
+                style="font-size: 8px">SIGNATURE:</span></span></td>
+        <td colspan="2">Relationship:</td>
+        <td colspan="2">Phone Number:</td>
+    </tr>
+</table>
+
+<script>
+    // For 1. Patient Profile
+    lastName = "Amerila"
+    firstName = "Jemuel"
+    middleName ="Burgos"
+    birthDay = "11/28/1998"
+    age = "21"
+    gender = "Female"
+    occupation = "Staff"
+    civilStatus = "Single"
+    nationality = "Filipino"
+    passportNumber = "sdasd"
+    document.getElementById("lastName").innerHTML = lastName.toUpperCase();
+    document.getElementById("firstName").innerHTML = firstName.toUpperCase();
+    document.getElementById("middleName").innerHTML = middleName.toUpperCase();
+    document.getElementById("birthDay").innerHTML = birthDay;
+    document.getElementById("age").innerHTML = age;
+                // if Gender is male cross the male else female
+    gender === "Male" ? document.getElementById("male").innerHTML = "x" : document.getElementById("female").innerHTML = "x"
+    document.getElementById("occupation").innerHTML = occupation.toUpperCase();
+    document.getElementById("civilStatus").innerHTML = civilStatus.toUpperCase();
+    document.getElementById("nationality").innerHTML = nationality.toUpperCase();
+                // if passport number is NOT null insert the value else N/A
+    passportNumber !== "" ? document.getElementById("passportNumber").innerHTML = passportNumber : document.getElementById("passportNumber").innerHTML = "N/A"
+
+    // For 2. Philippines Residence
+    //2.1 Permanent Address
+    houseNumber = "36"
+    street = "daungan"
+    municipality = "meycauayan"
+    province = "bulacan"
+    region = "ncr"
+    homePhoneNumber = "s"
+    cellPhoneNumber = "09957239960"
+    emailAddress = "jemuel.amerila1@gmail.com"
+    document.getElementById("houseNumber").innerHTML = houseNumber !== "" ? houseNumber.toUpperCase() : "N/A" ;
+    document.getElementById("street").innerHTML = street !== "" ? street.toUpperCase() : "N/A" ;
+    document.getElementById("municipality").innerHTML = municipality !== "" ? municipality.toUpperCase() : "N/A" ;
+    document.getElementById("province").innerHTML = province !== "" ? province.toUpperCase() : "N/A" ;
+    document.getElementById("region").innerHTML = region !== "" ? region.toUpperCase() : "N/A" ;
+    document.getElementById("homePhoneNumber").innerHTML = homePhoneNumber !== "" ? homePhoneNumber.toUpperCase() : "N/A" ;
+    document.getElementById("cellPhoneNumber").innerHTML = cellPhoneNumber !== "" ? cellPhoneNumber.toUpperCase() : "N/A" ;
+    document.getElementById("emailAddress").innerHTML = emailAddress !== "" ? emailAddress.toUpperCase() : "N/A" ;
+
+    //2.1 Current Address
+    same = "Yes"
+    _houseNumber = same === "No" ? "" : houseNumber
+    _street = same === "No" ? "" : street
+    _municipality = same === "No" ? "" : municipality
+    _province = same === "No" ? "" : province
+    _region = same === "No" ? "" : region
+    _homePhoneNumber = same === "No" ? "" : homePhoneNumber
+    _cellPhoneNumber = same === "No" ? "" : cellPhoneNumber
+    _emailAddress = same === "No" ? "" : emailAddress
+    document.getElementById("_houseNumber").innerHTML = _houseNumber !== "" ? _houseNumber.toUpperCase() : "N/A" ;
+    document.getElementById("_street").innerHTML = _street !== "" ? _street.toUpperCase() : "N/A" ;
+    document.getElementById("_municipality").innerHTML = _municipality !== "" ? _municipality.toUpperCase() : "N/A" ;
+    document.getElementById("_province").innerHTML = _province !== "" ? _province.toUpperCase() : "N/A" ;
+    document.getElementById("_region").innerHTML = _region !== "" ? _region.toUpperCase() : "N/A" ;
+    document.getElementById("_homePhoneNumber").innerHTML = _homePhoneNumber !== "" ? _homePhoneNumber.toUpperCase() : "N/A" ;
+    document.getElementById("_cellPhoneNumber").innerHTML = _cellPhoneNumber !== "" ? _cellPhoneNumber.toUpperCase() : "N/A" ;
+    document.getElementById("_emailAddress").innerHTML = _emailAddress !== "" ? _emailAddress.toUpperCase() : "N/A" ;
+
+    //3. Address Outside the Philippines
+    __employer = ""
+    __occupation = ""
+    __placeWork = ""
+    __houseNumber = ""
+    __street = ""
+    __city = ""
+    __province = ""
+    __country = ""
+    __officePhoneNumber = ""
+    __cellPhonenumber = ""
+
+    document.getElementById("__employer").innerHTML = __employer !== "" ? __employer.toUpperCase() : "N/A" ;
+    document.getElementById("__occupation").innerHTML = __occupation !== "" ? __occupation.toUpperCase() : "N/A" ;
+    document.getElementById("__placeWork").innerHTML = __placeWork !== "" ? __placeWork.toUpperCase() : "N/A" ;
+    document.getElementById("__houseNumber").innerHTML = __houseNumber !== "" ? __houseNumber.toUpperCase() : "N/A" ;
+    document.getElementById("__street").innerHTML = __street !== "" ? __street.toUpperCase() : "N/A" ;
+    document.getElementById("__city").innerHTML = __city !== "" ? __city.toUpperCase() : "N/A" ;
+    document.getElementById("__province").innerHTML = __province !== "" ? __province.toUpperCase() : "N/A" ;
+    document.getElementById("__country").innerHTML = __country !== "" ? __country.toUpperCase() : "N/A" ;
+    document.getElementById("__officePhoneNumber").innerHTML = __officePhoneNumber !== "" ? __officePhoneNumber.toUpperCase() : "N/A" ;
+    document.getElementById("__cellPhonenumber").innerHTML = __cellPhonenumber !== "" ? __cellPhonenumber.toUpperCase() : "N/A" ;
+
+    //4. Travel History
+    travel = "Yes"
+    port = ""
+    vessel = ""
+    number = ""
+    departure = ""
+    arrival = ""
+
+    travel === "Yes" ? document.getElementById("yes").innerHTML = 'x' : document.getElementById("no").innerHTML = 'x' ;
+    document.getElementById("port").innerHTML = port !== "" ? port.toUpperCase() : "N/A" ;
+    document.getElementById("vessel").innerHTML = vessel !== "" ? vessel.toUpperCase() : "N/A" ;
+    document.getElementById("number").innerHTML = number !== "" ? number.toUpperCase() : "N/A" ;
+    document.getElementById("departure").innerHTML = departure !== "" ? departure.toUpperCase() : "N/A" ;
+    document.getElementById("arrival").innerHTML = arrival !== "" ? arrival.toUpperCase() : "N/A" ;
+
+    //5. Exposure History
+
+</script>
+</body>
+</html>
